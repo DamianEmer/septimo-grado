@@ -1,20 +1,26 @@
 <div id="container-home">
   <nav id="header">
      <div class="title">
-        <h3>Septimo grado, Grupo musical.....</h3>
-        <h5>El grado que es de tu agrado</h5>    
+        <a routerLink="/inicio">
+          <h3>Septimo grado, Grupo musical.....</h3>
+          <h5>El grado que es de tu agrado</h5>    
+        </a>  
       </div>
     <div class="options">
-      <div class="option"><a href="#">Contacto</a></div>
-      <div class="option"><a href="#">Paquetes</a></div>
-      <div class="option"><a href="#">Fotos</a></div>    
+      <a routerLink="/contacto"><div class="option">Contacto</div></a>
+      <a routerLink="/paquetes"><div class="option">Paquetes</div></a>
+      <a routerLink="/fotos"><div class="option">Fotos</div></a>
     </div>
   </nav>
 
+  <router-outlet></router-outlet>
+
+  <!--
   <div id="footer">
     <span class="facebook2"></span>
     <span class="youtube"></span>
     <span class="twitter"></span>
     <h2>Derechos reservados</h2>
   </div>
+-->
 </div>

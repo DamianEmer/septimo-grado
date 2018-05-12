@@ -1,0 +1,30 @@
+#container-photos{
+	.albums{
+		width: 80%;
+		//height: 420px;
+		height: 460px;
+		//background-color: #938FB8;
+		display: flex;
+		flex-wrap: nowrap;
+		margin: 50px auto auto auto;		
+
+		.photos-shows,
+		.photos-group{
+			width: 40%;
+			//height: 100%;
+			height: 420px;
+			background-color: #7995C8;
+			border-right: 2px solid black;
+			text-align: center;
+			margin: 10px 0 0 7%;
+			box-shadow: 6px 10px 10px;
+
+			.image {
+				width: 100%;
+				//height: 85%;
+				height: 355px;
+				background-color: #463463
+			}
+		}
+	}
+}
