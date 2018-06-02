@@ -1,3 +1,4 @@
+@import '../../../sass/variables';
 #container-contact{
 	h2 {
 		margin-top: 50px;
@@ -15,7 +16,10 @@
 		display: flex;
 		flex-wrap:wrap;
 
-		
+		.color{
+			color: $icon-color;
+		}
+
 		.icon {
 			width: 30px;
 			height: 30px;

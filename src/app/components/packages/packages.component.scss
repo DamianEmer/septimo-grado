@@ -1,3 +1,4 @@
+@import '../../../sass/variables';
 #container-packages{
 
 	h1{
@@ -5,39 +6,54 @@
 	}
 
 	.category{
-		width: 800px;
+		width: 900px;
 		height: 420px;
-		background-color: #989898;
+		//background-color: #989898;
 		margin:auto;
 		display: flex;
 		flex-wrap: nowrap;
 
 		.item{
 			text-align: center;
-			width: 33.33%;
+			width: 30%;
 			height: 100%;
+			margin-left: $margin-packages;
 			border-left: 1px solid black;
+			border-top: 1px solid black;
 			display: flex;
 			flex-direction: column;
+			box-shadow: 5px 15px 25px rgb(202, 196, 196);
 
 			h4{
-				background-color: #DEDEDE;
+				background-color: rgb(252, 252, 252);
 				height: 10%;
 				margin-top: 0px;
+				padding: 15px;
 			}
 
 			.image {
 				margin-top: -5px;
 				width:100%;
 				height:50%;
-				background-color:#764141;
+				background-color:#8074b4;
 			}
+
+			
 
 			.text-description {
 				width: 100%;
 				height: 40%;
-				background-color: #E19292;
+				//background-color: #E19292;
 			}
+		}
+
+		.item:hover .image {
+			-webkit-transform: scale(1.3);
+			transform: scale(1.3);
+		}
+
+		.item {
+			overflow: hidden;
 		}
 	}
 }
