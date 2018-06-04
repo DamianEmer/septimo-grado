@@ -2,12 +2,10 @@
 #container-photos{
 	.albums{
 		width: 80%;
-		//height: 420px;
 		height: 460px;
-		//background-color: #938FB8;
 		display: flex;
 		flex-wrap: nowrap;
-		margin: 50px auto auto auto;		
+		margin: 50px auto auto auto;
 
 		.photos-shows,
 		.photos-group{
@@ -20,21 +18,33 @@
 			box-shadow: 6px 10px 10px;
 
 			.image1 {
-					@include image (rgb(199, 109, 109));
+					@include image;
+					background-image: url('../../../assets/image-group.jpg');
+					background-size: 100% 355px;
 					&:hover {
-						transform: translate(20px, 20px); 
+						transform: translate(20px, 20px);
 					}
 				}
 
 			.image2 {
 					@include image
+					background-image: url('../../../assets/image-group2.jpg');
+					background-size: 100% 355px;
 					&:hover {
-						transform: translate(20px, 20px); 
-						//transition: all .5s ease-in-out;
+						transform: translate(20px, 20px);
 					}
 				}
 			}
 		}
+
+		.zoom-photo {
+			width: 650px;
+			height: 440px;
+			background-color: #cecece;
+			position: relative;
+			margin: auto;
+			margin-top: -440px;
+ 		}
 	}
 
 

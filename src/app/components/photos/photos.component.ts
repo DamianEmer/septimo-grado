@@ -9,7 +9,7 @@ export class PhotosComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit()
 
+  }
 }

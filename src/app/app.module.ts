@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-//Enrutamiento para pruebas 
+//Enrutamiento para pruebas
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -9,6 +9,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { PackagesComponent } from './components/packages/packages.component';
 import { PhotosComponent } from './components/photos/photos.component';
 import { HomeComponent } from './components/home/home.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 //Enrutamiento de prueba
 const appRoutes: Routes = [
@@ -16,6 +17,7 @@ const appRoutes: Routes = [
   {path: 'contacto', component: ContactComponent},
   {path: 'paquetes', component: PackagesComponent},
   {path: 'fotos', component: PhotosComponent},
+  {path: 'galeria', component: GalleryComponent},//Agregado
   {path: '', redirectTo:'/inicio', pathMatch: 'full'}
 ];
 
@@ -25,7 +27,8 @@ const appRoutes: Routes = [
     ContactComponent,
     PackagesComponent,
     PhotosComponent,
-    HomeComponent
+    HomeComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

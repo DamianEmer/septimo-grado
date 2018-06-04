@@ -1,0 +1,7 @@
+<div id="container-gallery">
+    <div class="photo-gallery" *ngFor="let img of gallery">
+        <div class="photo" *ngIf="img.category == 'group'">
+            {{ img.url }}
+        </div>
+    </div>
+</div>

@@ -1,6 +1,4 @@
 @import '../sass/variables';
-//@import '../assets/fonts/style.css';
-//@import '../sass/responsive/'
 
 #container-home {
 	#header{
@@ -9,7 +7,7 @@
 		background-color: $menu-color-primary;
 		display: flex;
 		flex-wrap: nowrap;
-		box-shadow: 0 15px 15px $color-shadow;//ver si funciona o cambiar a rgba()
+		box-shadow: 0 15px 15px $color-shadow;
 
 		.title{
 			width: 50%;
@@ -41,7 +39,7 @@
 		/*
 			Options for menu
 		*/
-		.menu{						
+		.menu{
 			width: 50%;
 			height: 100%;
 			display: flex;
@@ -70,11 +68,11 @@
 		}
 	}
 
-	/*Footer*/
-	/*Componerlo, hacerlo invisible con los iconos de redes sociales*/
+	/**	Footer **/
+
 	#footer{
 		width: 100%;
-		height: 100px;
+		height: 100px;//75px
 		margin-bottom: 0px;
 		background-color: $menu-color-primary;
 		text-align: center;
