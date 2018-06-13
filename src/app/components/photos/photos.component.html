@@ -2,15 +2,12 @@
 	<div class="albums">
 		<div class="photos-shows">
 			<h3>SHOWS</h3>
-			<div class="image1"></div>
+			<ks-modal-gallery [modalImages]="showImages"
+												[previewConfig]="{visible:false}"
+												[slideConfig]="{infinite: false, sidePreviews: {show: false}}"
+												[plainGalleryConfig]="customPlainGalleryRowConfig"></ks-modal-gallery>
 		</div>
 		<div class="photos-group">
-			<h3>GRUPO</h3>
-			<div class="image2"></div>
+			<h3>GRUPO</h3>			
 		</div>
 	</div>
-
-	<div class="zoom-photo" hidden="false">
-
-	</div>
-</div>

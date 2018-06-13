@@ -16,41 +16,6 @@
 			text-align: center;
 			margin: 10px 0 0 7%;
 			box-shadow: 6px 10px 10px;
-
-			.image1 {
-					@include image;
-					background-image: url('../../../assets/image-group.jpg');
-					background-size: 100% 355px;
-					&:hover {
-						transform: translate(20px, 20px);
-					}
-				}
-
-			.image2 {
-					@include image
-					background-image: url('../../../assets/image-group2.jpg');
-					background-size: 100% 355px;
-					&:hover {
-						transform: translate(20px, 20px);
-					}
-				}
 			}
 		}
-
-		.zoom-photo {
-			width: 650px;
-			height: 440px;
-			background-color: #cecece;
-			position: relative;
-			margin: auto;
-			margin-top: -440px;
- 		}
 	}
-
-
-	/*
-	https://www.enriquejros.com/efectos-imagenes-css/
-	https://learn.shayhowe.com/advanced-html-css/transitions-animations/
-	https://robots.thoughtbot.com/transitions-and-transforms
-	https://www.creativebloq.com/inspiration/css-animation-examples
-	*/
