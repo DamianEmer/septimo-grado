@@ -1,7 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-//Enrutamiento para pruebas 
+//Angular-modal-gallery
+import 'hammerjs';
+import 'mousetrap';
+import { ModalGalleryModule } from 'angular-modal-gallery';
+
+//Enrutamiento para pruebas
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -29,6 +34,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    ModalGalleryModule.forRoot(),
     RouterModule.forRoot(
       appRoutes,
       {  enableTracing: true}
