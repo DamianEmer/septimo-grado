@@ -12,7 +12,7 @@ export class PhotosComponent implements OnInit {
 
   // Custom previewC
   customPlainGalleryRowConfig: PlainGalleryConfig = {
-    stratry: PlainGalleryStrategy.ROW,
+    strategy: PlainGalleryStrategy.ROW,
     layout: new LineLayout({width: '100%', height: '355px'},
         {length: 1, wrap: false}, 'flex-start')
   }
@@ -30,35 +30,35 @@ export class PhotosComponent implements OnInit {
     new Image(
       1,
       {
-        img: '../../../assets/1 seleccion.jpg'
+        img: '../../../assets/1 seleccion.jpg',
         description: 'sin descripcion'
       }
     ),
     new Image(
       2,
       {
-        img: '../../../assets/2 seleccion.jpg'
+        img: '../../../assets/2 seleccion.jpg',
         description: 'sin descripcion'
       }
     ),
     new Image(
       3,
       {
-        img: '../../../assets/3 seleccion.jpg'
+        img: '../../../assets/3 seleccion.jpg',
         description: 'sin descripcion'
       }
     ),
     new Image(
       4,
       {
-        img: '../../../assets/4 seleccion.jpg'
+        img: '../../../assets/4 seleccion.jpg',
         description: 'sin descripcion'
       }
     ),
     new Image(
       5,
       {
-        img: '../../../assets/5 seleccion.jpg'
+        img: '../../../assets/5 seleccion.jpg',
         description: 'sin descripcion'
       }
     )

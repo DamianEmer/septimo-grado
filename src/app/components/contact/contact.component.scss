@@ -4,7 +4,7 @@
 		margin-top: 50px;
 		color: black;
 		text-align: center;
-	}	
+	}
 
 	.cont-facebook,
 	.cont-twitter,
@@ -12,7 +12,7 @@
 	.cont-whatsapp,
 	.cont-email{
 		margin-left: 35%;
-		margin-top: 2%; 
+		margin-top: 2%;
 		display: flex;
 		flex-wrap:wrap;
 
@@ -26,13 +26,34 @@
 			//background-color: red;
 		}
 
-		.social-network{			
+		.social-network{
 			font-size: 18px;
 			margin-left: 30px;
 			a{
 				color: black;
-				text-decoration: none;//
+				text-decoration: none;
 			}
 		}
 	}
-} 
+}
+
+@media screen and (max-width: 480px) {
+	#container-contact{
+		h2 {
+			margin-top: 40px;
+			color: red;
+			text-align: center;
+		}
+
+		.cont-facebook,
+		.cont-twitter,
+		.cont-youtube,
+		.cont-whatsapp,
+		.cont-email{
+			margin-left: 20%;
+			margin-top: 2%;
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+}
