@@ -1,24 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { Image, PlainGalleryConfig, PlainGalleryStrategy, LineLayout } from 'angular-modal-gallery';
+//import { ImagesService } from '../../services/images.service';
+import { Image, PlainGalleryConfig, PlainGalleryStrategy, LineLayout } from
+'angular-modal-gallery';
 
 @Component({
   selector: 'app-photos',
   templateUrl: './photos.component.html',
   styleUrls: ['./photos.component.scss']
 })
+
 export class PhotosComponent implements OnInit {
 
-  constructor() { }
-
-  // Custom previewC
-  customPlainGalleryRowConfig: PlainGalleryConfig = {
-    strategy: PlainGalleryStrategy.ROW,
-    layout: new LineLayout({width: '100%', height: '355px'},
-        {length: 1, wrap: false}, 'flex-start')
-  }
-
-  // Dummi
-  showImages: Image[] = [
+  images: Image[] = [
     new Image(
       0,
       {
@@ -64,7 +57,18 @@ export class PhotosComponent implements OnInit {
     )
   ];
 
-  ngOnInit(){
+  //images: Image[] = [];
 
+  constructor() { }
+
+  // Custom previewC
+  customPlainGalleryRowConfig: PlainGalleryConfig = {
+    strategy: PlainGalleryStrategy.ROW,
+    layout: new LineLayout({width: '100%', height: '100%'},
+        {length: 1, wrap: false}, 'flex-start')
+  }
+
+  ngOnInit(){
+    //this.images = this.imageService.getImages();
   }
 }

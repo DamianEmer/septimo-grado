@@ -1,77 +1,215 @@
 @import '../sass/variables';
 
 #container-home {
+
+	/*Diseño de cabecera*/
 	#header{
-		width: $width-menu;
-		height: $height-menu;
-		background-color: $menu-color-primary;
+		width: $width-header;
+		height: $height-header;
+		background-color: $header-back-primary;
 		display: flex;
 		flex-wrap: nowrap;
 		box-shadow: 0 15px 15px $color-shadow;
 
-	a{
-			text-decoration: none;
-			color: black;
-			.logo{
-						width: 100px;
-						height: 75px;
-						background-image:url(../assets/Logo.jpeg);
-						background-size: 100px 75px;
-						position: absolute;
+		/*Contenedor de titulo y logo*/
+		.title-site{
+			width: 50%;
+			
+			a{
+				text-decoration: none;
+				color: $header-font-title-color;
+
+				.logo{
+					width: 100px;
+					height: 75px;
+					background-image:url(../assets/Logo.jpeg);
+					background-size: 100px 75px;
+					position: absolute;
 				}
 
-			h3{
-				margin: 5px 0 0 115px;
-				font-size: 22px;
-			}
+				h3{
+					margin: 5px 0 0 115px;
+					font-size: 20px;
+				}
 
-			h5{
-				//position: absolute;
-				margin: 10px 0 0 120px;
-				font-size: 17px;
+				h5{
+					margin: 10px 0 0 120px;
+					font-size: 16px;
+				}
 			}
 		}
-		/*
-			Options for menu
-		*/
-		.menu{
+
+		/*Boton para menu responsivo*/
+		.btn-menu{
+			display: none;
+		}
+
+		/*Contenedor de menu de navegación*/
+		.navigation {
 			width: 50%;
-			height: 100%;
-			margin-left:240px;
-			display: flex;
-			flex-wrap: nowrap;
-			justify-content: flex-end;
 
-			a{
-				color: #fff;
-				font-size: 18px;
-				width: 25%;
+			#menu {
+				width: 100%;
 				height: 100%;
+				margin-top: -15px;
 
-				.option{
-					width: 100%;
+				ul{
+					list-style: none;
+					padding-left: 0px;
+					display: flex;
+					flex-wrap: nowrap;
+					flex-direction: row;
 					height: 100%;
-					color: $menu-font-color;
-					text-align: center;
-					line-height: 50px;
-					cursor: pointer;
+
+					li{
+						width: 33.3%;
+						height: 100%;
+
+						a{
+							color: $header-font-color;
+							text-decoration: none;
+							display: block;
+							text-align: center;
+							width: 100%;
+							height: 100%;
+
+						}
+
+						a:hover{
+							background-color: $hover-motion-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*Diseño de menu responsivo entre 600 y 800px*/
+
+@media (max-width: 800px){
+
+	#container-home{
+		#header{
+			.title-site{
+				width: 70%;
+
+				a{
+					.logo {
+						margin: 5px 0 0 5px;
+						width: 75px;
+						height: 50px;
+						background-size: 75px 50px;
+					}
+
+					h3 {
+						font-size: 17px;
+						margin-left: 90px;
+					}
+
+					h5 {
+						display: none;
+					}
+				}
+			}
+
+			.navigation {
+				width: 30%;
+
+				.btn-menu {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 72px;
+					height: 50px;
+					background-color: $header-back-primary;
+					border: 1px solid rgb(102, 32, 90);
+					color: #ffF;
+					margin-top: 15px;
+					margin-left: 20%;
 				}
 
-				.option:hover{
-					background-color: #890A85;
+				.btn-menu:focus {
+					outline: none;
+				}
+
+				.btn-menu:focus + #menu {
+					transform: translateX(0);
+				}
+
+				#menu {
+					padding-top: 100px;
+					position:fixed;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					width: 14rem;
+					height: 100%;
+					background-color: $header-back-primary;
+					transform: translateX(14rem);
+					transition: 1s all;
+
+					ul{
+						flex-wrap: wrap;
+						flex-direction: column;
+						
+						li{
+							width: 100%;
+							height: 50px;
+							margin-top: 5px;
+							
+							a{
+								width: 100%;
+								display: block;
+								height: 50px;
+							}
+
+							a:hover {
+								background-color: $hover-motion-color;
+							}
+						}
+					}
 				}
 			}
 		}
 	}
 
-	/**	Footer **/
+}
 
-	#footer{
-		width: 100%;
-		height: 100px;//75px
-		margin-bottom: 0px;
-		background-color: $menu-color-primary;
-		text-align: center;
-		color: #fff;
+/*Diseño de menu responsivo menor a 600px*/
+
+@media (max-width: 600px) {
+	#container-home{
+		#header{
+			height: 90px;
+			.title-site{
+				width: 80%;
+				background-color: $header-back-primary;
+				a{
+					display: flex;
+					flex-wrap: wrap;
+					flex-direction: column;
+					margin-top: 10px;
+					align-content: center;
+
+					.logo{
+						background-size: 50px 35px;
+						width: 50px;
+						height: 35px;
+					}
+
+					h3{
+						margin: auto;
+						margin-top: 40px;
+						font-size: 15px;
+						text-align: center;
+					}
+
+					h5{
+						display: none;
+					}
+				}
+			}
+		}
 	}
 }
