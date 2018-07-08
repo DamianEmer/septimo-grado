@@ -1,31 +1,51 @@
 @import '../../../sass/variables';
 #container-contact{
+
+	/*Diseño de la vista contendora*/
+	width: 90%;
+	margin: auto;
+	margin-top: 40px;
+	//background-color: #70a0ad;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+
+	/*Diseño de titulo de la vista*/
 	h2 {
-		margin-top: 50px;
+	//	background-color: #38565e;
+		width: 80%;
+		margin: 50px auto 40px auto;
+	//	margin-top: 50px;
 		color: black;
 		text-align: center;
 	}
 
+	/*Diseño de contenedores por red social*/
 	.cont-facebook,
 	.cont-twitter,
 	.cont-youtube,
 	.cont-whatsapp,
 	.cont-email{
-		margin-left: 35%;
+		width: 80%;
+		//background-color: #38565e;
+		margin: auto;
 		margin-top: 2%;
 		display: flex;
-		flex-wrap:wrap;
+		flex-wrap: wrap;
 
-		.color{
-			color: $icon-color;
-		}
-
+	/*Diseño de Icono*/
 		.icon {
 			width: 30px;
 			height: 30px;
-			//background-color: red;
+			margin-left: 30%;
+
+			.color{
+				color: $icon-color;
+			}
 		}
 
+	/*Diseño de nombre*/
 		.social-network{
 			font-size: 18px;
 			margin-left: 30px;
@@ -37,11 +57,15 @@
 	}
 }
 
-@media screen and (max-width: 480px) {
+/*Diseño responsive menor a 600px*/
+@media screen and (max-width: 600px) {
+
 	#container-contact{
+
+		height: 100%;
+
 		h2 {
-			margin-top: 40px;
-			color: red;
+			margin-top: 30px;
 			text-align: center;
 		}
 
@@ -50,10 +74,23 @@
 		.cont-youtube,
 		.cont-whatsapp,
 		.cont-email{
-			margin-left: 20%;
 			margin-top: 2%;
 			display: flex;
 			flex-wrap: wrap;
+			flex-direction: column;
+			height: 75px;
+
+			.icon {
+				margin: auto;
+			}
+
+			.social-network{
+				margin: auto;
+				text-align: center;
+			}
+
 		}
+
 	}
+
 }

@@ -8,7 +8,6 @@
 	.category{
 		width: 900px;
 		height: 420px;
-		//background-color: #989898;
 		margin:auto;
 		display: flex;
 		flex-wrap: nowrap;
@@ -35,15 +34,12 @@
 				margin-top: -5px;
 				width:100%;
 				height:50%;
-				background-color:#8074b4;
-			}
-
-			
+				background-color: $container-back-color;
+			}			
 
 			.text-description {
 				width: 100%;
-				height: 40%;
-				//background-color: #E19292;
+				height: 40%;				
 			}
 		}
 
@@ -54,6 +50,27 @@
 
 		.item {
 			overflow: hidden;
+		}
+	}
+}
+
+@media (max-width: 800px){
+	#container-packages{
+		
+		.category{
+			width: 85%;
+			height: 800px;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			.item{
+				width: 70%;
+				height: 220px;
+				margin-bottom: 25px;
+			}
 		}
 	}
 }

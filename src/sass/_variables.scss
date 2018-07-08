@@ -1,11 +1,17 @@
 /*
-  Design menu
+  Para diseño de header
 */
-$menu-color-primary:#D718CC;
-$menu-font-color: #fff;
-$height-menu: 75px;
-$width-menu: 100%;
+$header-back-primary:#e72683;
+$header-font-color: #fff;
+$header-font-title-color: rgb(0, 0, 0);
+$height-header: 75px;
+$width-header: 100%;
 $color-shadow: #737373;
+
+/*
+	Para diseño de hover sobre menu
+*/
+$hover-motion-color:  #ba105a;
 
 /*
 	Margins
@@ -16,3 +22,8 @@ $margin-packages: 4%;
 	Icons
 */
 $icon-color: rgb(65, 10, 97);
+
+/*
+	Diseño para contenedor de fotos
+*/
+$container-back-color: #ffcee3;
